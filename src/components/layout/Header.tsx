@@ -29,7 +29,7 @@ const Header = () => {
                     </svg>
                 </button>
             </div>
-            <div className="flex">
+            <div className="flex fixed">
                 <div className="flex-shrink-0 sm:sticky left-auto right-full sm:!right-0 sm:!left-0 fixed top-0 flex flex-col items-stretch py-10 pl-5 xl:pl-10 pr-0 w-[90vw] max-w-[288px] sm:max-w-none sm:w-16 xl:w-72 border-r border-gray-800 h-screen overflow-y-auto z-10 bg-dark sm:bg-transparent sm:!translate-x-0 transition-all duration-500 translate-x-0 gap-8">
                     <a href="/" className="flex gap-2 items-center">
                         <img
@@ -45,7 +45,7 @@ const Header = () => {
                         <p className="sm:hidden xl:block mb-5 uppercase text-gray-400 font-semibold text-[20px]">Menu</p>
                         <div className="flex flex-col items-stretch gap-3">
                             <a
-                                href="/"
+                                href="/home"
                                 className="flex items-center gap-2 transition text-gray-400 hover:text-gray-300"
                             >
                                 <svg
@@ -144,7 +144,6 @@ const Header = () => {
                 <Link to='/history'>HISTORY</Link>
                 <Link to='/signin'>SIGN IN</Link>
             </div>
-            <Outlet/>
         </div>
     );
 };
